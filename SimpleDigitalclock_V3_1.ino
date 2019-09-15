@@ -31,16 +31,17 @@ bool ampm = true;
 
 
 void setup() {
-	lcd.begin(16, 2);
+	
+  lcd.begin(16, 2);
   pinMode(10,OUTPUT);
   digitalWrite(10,HIGH);
   lcdcharinitiate();
   Timer1.initialize(1000000);
   Timer1.attachInterrupt(thedisplayfunction);
   lcd.clear();
-  theclock();
-                                        
+  theclock();                                 
 }
+
 void loop()
 {
   int theinput = read_LCD_buttons();
@@ -409,7 +410,7 @@ void lcdnumber10(int startposition) // if hr2 zero dont display anything until 1
   lcd.write((byte)254);
   lcd.write((byte)254);
   lcd.setCursor(startposition+0,1);
-  lcd.print(" ");
+  lcd.print(" "); // same as byte 254
   lcd.print(" ");
   lcd.write(254);
 }
