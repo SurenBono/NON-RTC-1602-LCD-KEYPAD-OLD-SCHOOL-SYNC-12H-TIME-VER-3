@@ -1,8 +1,8 @@
 # NON-RTC-1602-LCD-KEYPAD-OLD-SCHOOL-SYNC-12H-TIME-VER-3.1
 -------------------------------------------------------------------------------------------------------
 
-A simple,affordable bright timekeeping demo that reserves the mid-night oil 
-within minute accuracy / day if compared to the hour glass & candles .
+A simple, affordable bright timekeeping demo that reserves the mid-night oil 
+within minute accuracy / day if compared to ancient hour glass + a candle .
 
 MODULE
 ---------------------------------------------------------------------------------------------------------
