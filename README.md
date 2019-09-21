@@ -2,7 +2,7 @@
 -------------------------------------------------------------------------------------------------------
 
 A simple, affordable bright timekeeping demo that reserves the mid-night oil 
-within minute accuracy / day if compared to ancient hour glass + a candle .
+Crystal accuracy :+22 sec/ day if compared to ancient hour glass + a candle .
 
 MODULE
 ---------------------------------------------------------------------------------------------------------
