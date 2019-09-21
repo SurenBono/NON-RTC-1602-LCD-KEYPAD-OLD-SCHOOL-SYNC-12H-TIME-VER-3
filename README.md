@@ -1,8 +1,8 @@
 # NON-RTC-1602-LCD-KEYPAD-OLD-SCHOOL-SYNC-12H-TIME-VER-3.1 also Non-NTP Non-RCC Nor GPS :)
 -------------------------------------------------------------------------------------------------------
 
-A simple, affordable bright timekeeping demo that reserves the mid-night oil 
-Crystal accuracy :+22 sec/ day if compared to ancient hour glass + a candle .
+A simple, affordable bright timekeeping demo that reserves the mid-night oil .
+Crystal accuracy : +22 sec / day if compared to ancient hour glass + a candle .
 
 MODULE
 ---------------------------------------------------------------------------------------------------------
