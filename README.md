@@ -3,6 +3,7 @@
 
 A simple, affordable bright timekeeping demo that reserves the mid-night oil .
 Crystal accuracy : +22 sec / day if compared to ancient hour glass + a candle .
+Big Digits visibility ranged upto 6 meter .
 
 MODULE
 ---------------------------------------------------------------------------------------------------------
