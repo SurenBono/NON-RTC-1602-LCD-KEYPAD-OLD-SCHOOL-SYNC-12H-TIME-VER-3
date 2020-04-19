@@ -2,8 +2,10 @@
 -------------------------------------------------------------------------------------------------------
 
 A simple, affordable bright timekeeping demo that reserves the mid-night oil .
-Crystal accuracy : +22 sec / day if compared to ancient hour glass + a candle .
+Crystal accuracy : +22 sec / day if microsecond  = 1000000 .
 Big Digits visibility ranged up to 6 meter .
+Tweak microseconds to tick =1000283/seconds for more accurate second (see diagram in repo) .
+Initialize TimerOne.h & sketch.ino microsecond as = 1000283 to calibrate its internal timer.
 
 MODULE
 ---------------------------------------------------------------------------------------------------------
@@ -26,15 +28,13 @@ NOTE
 - Used https://maxpromer.github.io/LCD-Character-Creator/
 - Developed on Win Xp ,donated version of ARDUINO 1.8.9 2019.03.15
 
-BUG FIXED (>16 sec = Second timing bug) V3.3 (6.4.20)
+BUG FIXED (>16 sec = UNO Seconds internal timing bug) V3.3 (6.4.20)
 ------------------------------------------------------
 - Calibrate and remove excess second /day,compared with NTP/GPS Clock.(2-Day Observation 19.9.19)  
 - TimerOne.h #54  void initialize(long microseconds=1000283); from default=1000000;
 - Redundancy on both side matters "	*.ino"	#40 Timer1.initialize(1000283);
 - Check analysis (Accuracy-Tweak--v2.png & UNO internal timing calibration anaysis.png ).
 - 19.4.20, More accurate day compared to GPS/NTP clock .
-
-
 
 BUG FIXED on V3.1
 -------------------------------------------------------------------------------------------------------------
