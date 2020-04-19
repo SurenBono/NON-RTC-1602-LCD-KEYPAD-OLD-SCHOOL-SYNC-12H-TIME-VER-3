@@ -26,6 +26,16 @@ NOTE
 - Used https://maxpromer.github.io/LCD-Character-Creator/
 - Developed on Win Xp ,donated version of ARDUINO 1.8.9 2019.03.15
 
+BUG FIXED (>16 sec = Second timing bug) V3.3 (6.4.20)
+------------------------------------------------------
+- Calibrate and remove excess second /day,compared with NTP/GPS Clock.(2-Day Observation 19.9.19)  
+- TimerOne.h #54  void initialize(long microseconds=1000283); from default=1000000;
+- Redundancy on both side matters "	*.ino"	#40 Timer1.initialize(1000283);
+- Check analysis (Accuracy-Tweak--v2.png & UNO internal timing calibration anaysis.png ).
+- 19.4.20, More accurate day compared to GPS/NTP clock .
+
+
+
 BUG FIXED on V3.1
 -------------------------------------------------------------------------------------------------------------
 - Bigger digit from former 1 COL x 2 ROW / digit to 3 COL x 2 ROW / digit.
