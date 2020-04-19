@@ -51,7 +51,7 @@ class TimerOne
 	char oldSREG;					// To hold Status Register while ints disabled
 
     // methods
-    void initialize(long microseconds=1000000);
+    void initialize(long microseconds=1000283);
     void start();
     void stop();
     void restart();
