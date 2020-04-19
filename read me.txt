@@ -1,0 +1,75 @@
+https://github.com/SurenBono/NON-RTC-1602-LCD-KEYPAD-OLD-SCHOOL-SYNC-12H-TIME-VER-3
+
+
+# NON-RTC-1602-LCD-KEYPAD-OLD-SCHOOL-SYNC-12H-TIME-VER-3.3...also non GPS ... and non NTP
+------------------------------------------------------------------------------------------
+
+A simple,affordable bright timekeeping demo that reserves the mid-night oil 
+within minute accuracy / day if compared to the hour glass & candles .
+
+MODULE
+------
+- SMD UNO or similar (Nano,Mega..etc ) are open sourced to test.
+- 4-bit 1602 LCD Uno Stackable Keypad.
+- USB serial power & data cable.
+- Pc with preferred online connection .
+
+NOTE
+----
+- Oscillators provide the basic timing and control for a microcontroller 
+  and its peripherals. Commonly used oscillators are of crystal because of
+  its well known stability and durability. It produces stable output for 
+  prolonged time. Crystal oscillators are mainly works under the principle 
+  of Piezo electric effect.
+- 16 MHz Crystal Oscillator marks a SECOND on UNO or something similar.
+- https://www.semiconductorforu.com/advantages-disadvantages-applications-crystal-oscillator/
+- Crystal Osciilators Accuracy : +22 sec /day if compared to NTP time.
+- Accuracy +22 sec/day
+- Each tick of the timer is not exactly 1ms, but is 1.024ms.(GOOGLE)
+- Reset Second ( btnDOWN ) to re-sync.
+- Incorporated binary,hex & decimal (byte) into timekeep project.
+- Used https://maxpromer.github.io/LCD-Character-Creator/
+- Developed on Win Xp ,donated version of ARDUINO 1.8.9 2019.03.15
+- Given the complexity of how timeworks, there are likely errors and inconsistencies with most/all of these and none of this data should be considered “official”.
+
+BUG FIXED (>16 sec = Second timing bug) V3.3 (6.4.20)
+------------------------------------------------------
+- Calibrate and remove excess second /day,compared with NTP/GPS Clock.(2-Day Observation 19.9.19)  
+- TimerOne.h #54  void initialize(long microseconds=1000283); from default=1000000;
+- Redundancy on both side matters "	*.ino"	#40 Timer1.initialize(1000283);
+- Check analysis (Accuracy-Tweak--v2.png & UNO internal timing calibration anaysis.png ).
+- 19.4.20, More accurate day compared to GPS/NTP clock .
+
+BUG FIXED on V3.2 (20/9/19)
+-----------------
+- Bigger digit from former 1 COL x 2 ROW / digit to 3 COL x 2 ROW / digit.
+- Shifted AM/PM to start from 12:00 
+- Added 2 button ,1-btnDOWN=RESET SECOND , 2-btnUP=AM/PM toggle.
+- HR2 will remain blank until hour 10,11,12(HR2,HR).
+- Assigned HR2 = 10 as if 0 to point to blank byte (254)/(" ") which was int NUM =0 in former versions.
+- Assigned HR2 = 11 as if int NUM = 1 to point to a cloned bytes of BIG DIGIT one.
+
+
+PRE-COMPILING TASK
+------------------
+- I assume you have the open sourced Arduino.cc IDE installed. Donation encouraged.
+- Google search Install CH341SER driver for SMD UNO or similar.
+- Select check proper port & board.
+- Add LCDKeypad & TimerOne drivers into Arduino\libraries.
+- Check if it compiled else learn to debug it.
+- If compiled than Upload and keypad sync test to your local time..etc
+
+
+CONTACT 
+----------
+- surenbono76@gmail.com
+- srotogargees@gmail.com
+- https://srotogargees.business.site/
+
+
+Original code by Jesse Tane for http://labs.ideo.com August 2008
+Developed by 2019 Sroto&Gargees™
+
+
+
+
